@@ -1,0 +1,1 @@
+// 問題のサンプルです<br><br>// 回答できていない場所や間違えている場所は赤くなります。<br>String hello = <<s>><<e>>;<br>// 回答が正しい場合は，表示が緑になります。<br>String world = <<s>>"world!"<<e>>;<br><br>// すべての回答欄が緑になるとクリアです。<br>System.out.println( <<s>>hello<<e>> + " " + <<s>>world<<e>> );

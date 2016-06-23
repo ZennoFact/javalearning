@@ -1,0 +1,172 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family:"ヒラギノ角ゴ Pro W3","メイリオ",sans-serif;
+  color: #27313D;
+}
+h2 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+.wrapper {
+  width: 100%;
+}
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+.box {
+  float: left;
+  margin-right: 20px;
+}
+header {
+  width: 100%;
+  background-color: #424242;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.header-box {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.score-string {
+  margin-top: 22px;
+  margin-left: 20px;
+  font-size: 30px;
+}
+#score {
+  color: #0E7AC4;
+}
+#combo {
+  color: #DE4830;
+}
+section {
+  float: left;
+  margin-right: 10px;
+}
+#editor-area {
+  width: 630px;
+}
+#game-area {
+  width: 630px;
+}
+#canvas {
+  background-image: url("../assets/bg.png")
+}
+div.editorbox {
+  width: 630px;
+  height: 525px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #464646;
+  color: #ffffff;
+  font-size: 1.6em;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  padding: 5px;
+}
+.none {
+  display: none;
+}
+.input {
+  background-color: #EE6557;
+  padding: 0px 5px;
+}
+.input.setting {
+  background-color: #40AAEF;
+  width: 160px;
+}
+input[type="text"] {
+  background-color: #464646;
+  border: 0;
+  padding: 10px;
+  font-size: 1.1em;
+  font-family: "Consolas", Arial, sans-serif;
+  color: #ffffff;
+  margin: 0 0 20px;
+  width: 250px;
+}
+input[type="text"]:focus {
+  /*border-width: 0px;
+  border-style: None;
+  outline: 0;*/
+}
+button {
+  padding: 15px 30px;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.btn-run {
+  background-color: #58BE89;
+}
+  .btn-run:hover {
+    background-color: #81d2c3;
+  }
+.btn-code {
+  background-color: #EB2142;
+  width: 100px;
+  margin: 45px auto;
+  padding: 15px 30px;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+.ok {
+ background-color: #58BE89;
+}
+.comment {
+  color: #a9a9a9;
+}
+footer {
+  text-align: center;
+}
+.clearfix {
+
+}
+  .clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+/* エディタ関連のスタイル */
+div.tabbox { margin: 0px; padding: 0px; width: 100%; }
+
+/* ▼(B)タブ部分 */
+p.tabs { margin: 0px; padding: 0px;}
+p.tabs a {
+   font-size: 1.4em;
+   display: block; width: 250px; float: left;
+   margin: 0px 2px 0px 0px; padding: 5px;
+   background-color: #646464;  color: #eeeeee;
+   text-decoration: none;
+}
+
+div.tab {
+  font-size: 1.6em;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  padding: 5px;
+  height: 600px; overflow: auto; clear: left;
+}
+div.tab {
+  background-color: #464646;  color: #eeeeee;
+  display: none;
+}
