@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Learning! | Java実習</title>
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="lib/jquery-2.2.3.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <header><h1>Java学習用手作りコンテンツ：とりあえず全部クリアできるまで頑張れ。</h1></header>
-    <div class="box container-fluid">
-      <div class="col-md-2">
-        <a data-index="1" class="list-group-item">変数</a>
-        <a data-index="2" class="list-group-item">変数と型と四則演算</a>
-        <a data-index="3" class="list-group-item">型とキャスト</a>
-        <a data-index="4" class="list-group-item">Scannerと文字列連結</a>
-        <a data-index="5" class="list-group-item">条件分岐：if</a>
-        <a data-index="6" class="list-group-item">条件分岐：switch</a>
-        <a data-index="7" class="list-group-item">反復処理：for</a>
-        <a data-index="8" class="list-group-item">反復処理：while</a>
-        <a data-index="9" class="list-group-item">配列</a>
-        <a data-index="10" class="list-group-item">二次元配列</a>
-        <a data-index="11" class="list-group-item">クラス</a>
-      </div>
-      <div class="col-md-5">
-        <p id="description"></p>
-      </div>
-      <div class="col-md-5">
-        <div id="code" class="editorbox" data="text/plain">
-          <span class="comment">// こんな感じで生きていきましょう</span></span>
-          <br>
-        </div>
-        <div class="button-box">
-          <button>Next!</button>
-        </div>
-      </div>
-      <script src="./js/data.js"></script>
-      <script src="./js/learning.js"></script>
-      <script>
-        load("description", 0);
-        load("code", 0);
-        jQuery.each($(".input"), function(i, val) {
-          this.classList.remove('ok');
-          if (this === val && this.innerText === data[0].answer[i]) {
-            this.classList.add('ok');
-          }
-        });
-      </script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning! | Java実習</title>
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="lib/jquery-2.2.3.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+  <h1>Javavava!!</h1>
+  by Kazuki Maeno
+</header>
+<div class="container-fluid">
+  <div class="box menu-box col-md-2">
+    <a data-index="1" class="list-group-item">変数</a>
+    <a data-index="2" class="list-group-item">変数と型と四則演算</a>
+    <a data-index="3" class="list-group-item">型とキャスト</a>
+    <a data-index="4" class="list-group-item">Scannerと文字列連結</a>
+    <a data-index="5" class="list-group-item">条件分岐：if</a>
+    <a data-index="6" class="list-group-item">条件分岐：switch</a>
+    <a data-index="7" class="list-group-item">反復処理：for</a>
+    <a data-index="8" class="list-group-item">反復処理：while</a>
+    <a data-index="9" class="list-group-item">配列</a>
+    <a data-index="10" class="list-group-item">二次元配列</a>
+    <a data-index="11" class="list-group-item">クラス</a>
+  </div>
+  <div class="box description-box col-md-4">
+    <p id="description"></p>
+  </div>
+  <div class="box editor-box col-md-6">
+    <div id="code" class="editor" data="text/plain">
+      <span class="comment">// こんな感じで生きていきましょう</span></span>
+      <br>
     </div>
-  </body>
+    <div class="button-box">
+      <button id="nextBtn" data-index="1">Next!</button>
+    </div>
+  </div>
+  <script src="./js/data.js"></script>
+  <script src="./js/learning.js"></script>
+  <script>
+    load("description", 0);
+    load("code", 0);
+    jQuery.each($(".input"), function(i, elem) {
+      if (0 < i) elem.innerText = data[0].answer[i];
+      inputStringCheck(elem, 0);
+    });
+    //
+  </script>
+</div>
+</body>
 </html>
